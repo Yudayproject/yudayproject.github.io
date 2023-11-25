@@ -12,6 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" href="images\Serenarium images\Serenarium Logo.png" />
+
+
 </head>
 
 <body class="is-preload">
@@ -174,13 +176,104 @@
 
 				<form method="post" action="https://formspree.io/f/mgejbnby">
 					<div class="row">
-						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="暱稱" /></div>
+						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="暱稱" />
+						</div>
+						<!--事情有誰-->
+						<div class="col-12">
+							<textarea name="message" placeholder="在這個故事中有哪些人呢？"></textarea>
+						</div>
+						
+						<!--發生時間-->
+						<fieldset>
+							<h3>
+								<legend>
+									<p align="left">發生的時間</p>
+								</legend>
+							</h3>
+
+							<div>
+								<input type="radio" id="onemon" name="time" value="onemon" checked
+									class="my-custom-input" />
+								<label for="onemon">一到兩個月內</label>
+							</div>
+
+							<div>
+								<input type="radio" id="threemon" name="time" value="threemon"
+									class="my-custom-input" />
+								<label for="threemon">三個月前</label>
+							</div>
+
+							<div>
+								<input type="radio" id="helfyea" name="time" value="helfyear" class="my-custom-input" />
+								<label for="helfyea">半年前</label>
+							</div>
+
+							<div>
+								<input type="radio" id="oneyear" name="time" value="oneyear" class="my-custom-input" />
+								<label for="oneyear">一年前</label>
+							</div>
+
+							<div>
+								<input type="radio" id="threeyear" name="time" value="threeyear"
+									class="my-custom-input" />
+								<label for="threeyear">三年前</label>
+							</div>
+
+							<div>
+								<input type="radio" id="sixyear" name="time" value="sixyear" class="my-custom-input" />
+								<label for="sixyear">六年前</label>
+							</div>
+						</fieldset>
+
+
+
 						<!--email
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									-->
+					<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" />
+					</div>
+					-->
+
+						<!--開端-->
+						<div class="col-12">
+							<textarea name="message" placeholder="開端"></textarea>
+						</div>
+						
+							<!--內容-->
 						<div class="col-12">
 							<textarea name="message" placeholder="把你想說的告訴我吧！"></textarea>
 						</div>
+						
+							<!--是否解決-->
+
+						<fieldset>
+							<h3>
+								<legend>
+									<p align="left">是否已經得到解決？</p>
+								</legend>
+							</h3>
+
+							<div>
+								<input type="radio" id="yes" name="yn" value="yes" checked class="my-custom-input" />
+								<label for="yes">已經得到解決了！</label>
+							</div>
+
+							<div>
+								<input type="radio" id="no" name="yn" value="no" class="my-custom-input" />
+								<label for="no">尚未得到解決>< </label>
+							</div>
+						</fieldset>
+
+						<!--希望幫助-->
+						<div class="col-12">
+							<textarea name="message" placeholder="希望得到什麼樣的幫助呢？"></textarea>
+						</div>
+						
+
+							<!--補充-->
+						<div class="col-12">
+							<textarea name="message" placeholder="補充說明"></textarea>
+						</div>
+						
+
 						<div class="col-12">
 							<input type="submit" value="送出" />
 						</div>
@@ -214,16 +307,16 @@
 	<script src="assets/js/main.js"></script>
 
 	<style>
-	.custom-cursor {
-		cursor: url(images/cursor1.png),auto;
-	}
+		.custom-cursor {
+			cursor: url(images/cursor1.png), auto;
+		}
 
-	a:hover {
-		cursor: url(images/cursor1.png), pointer;
-		/* 更換游標圖片的路徑 */
-	}
-</style>
-	
+		a:hover {
+			cursor: url(images/cursor1.png), pointer;
+			/* 更換游標圖片的路徑 */
+		}
+	</style>
+
 
 </body>
 
